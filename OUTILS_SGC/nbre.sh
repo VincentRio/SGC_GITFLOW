@@ -39,9 +39,9 @@
 # VERSION : 2.7 : DM : 3465  : 07/07/2017 : Supression des commandes "echo" laissees lors du developpement de la version precedente
 # VERSION : 2.7 : DM : 3472  : 07/07/2017 : correction de l'affichage de tailles de fichiers
 # VERSION : 2.7 : DM : 3522  : 07/07/2017 : Outils SGC : nbre (message incomplet)  
-# VERSION : 2.12 : DM : 3084 : 09/09/2019 : Outils SGC : Ajout du nouveau controle sur les crtl+M
 # VERSION : 2.12 : DM : 3683 : 09/09/2019 : Gerer la sortie des outils sur interruptions
 # VERSION : 2.12 : DM : 3778 : 09/09/2019 : Gerer la sortie des outils sur interruptions
+# VERSION : 2.14 : DM : 3084 : 30/03/2020 : Outils SGC : Ajout du nouveau controle sur les crtl+M
 # FIN-HISTORIQUE
 #
 ################################################################################
@@ -177,6 +177,7 @@ echo "---------- Fin nbre ----------"
 
 echo ""
 echo "---------- Resultat Controle M ----------"
+#Gestion des ctrl^m 
 #find . -type f -print0 | xargs -0 file | grep CRLF > ${GLB_RTMP}/ctrlM.res &
 find . -type f > ${GLB_RTMP}/fichier_ac_ctrlM.res &
 GLB_PID_BG=$!

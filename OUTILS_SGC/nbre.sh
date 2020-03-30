@@ -2,6 +2,7 @@ FC 90 Feature work 002 - more
 FC 90 - Feature work 003
 FC 90 - Release 0.1 - Correction
 FC 100 - Feature 005 in progress
+Bug 001 - Correction de la feature 003
 #!/bin/bash
 ################################################################################
 #
